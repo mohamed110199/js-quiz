@@ -1,0 +1,82 @@
+body {
+  font-size: 1rem;
+  background-color: #0d0d0d;
+  cursor: pointer;
+}
+.content {
+  margin-left: 270px;
+  padding: 20px;
+}
+.hidden {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* display: none; */
+  display: block;
+  height: 100%;
+  padding-top: 0.5rem;
+}
+.nav-link.active {
+  font-weight: bold;
+}
+.nav-link {
+  color: white;
+}
+.icons {
+  padding: 1rem .5rem;
+}
+.new-sidebar {
+  position: fixed;
+  left: 13%;
+  right: 83%;
+  top: 0;
+  height: 100%;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.toggle-icon, .bottom-icons {
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+.card{
+  background-color: #0d0d0d;
+}
+.meal-card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  .card-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: bottom 0.5s ease;
+  }
+
+  .card-title {
+    display: none;
+    font-size: 1.5em;
+    color: #333;
+  }}
+
+.meal-card:hover .card-overlay {
+  bottom: 0; /
+}
+
+.meal-card:hover .card-title {
+  display: block; 
+}
+

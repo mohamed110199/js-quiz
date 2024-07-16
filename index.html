@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="sidebar" class="sidebar">
+      <div class="sidebar-content text-white vh-100 d-flex flex-column">
+        <ul class="list-unstyled animate__animated animate__backInUp">
+          <li id="searchLink">Search</li>
+          <li id="categoryLink">Category</li>
+          <li id="areaLink">Area</li>
+          <li id="ingredientsLink">Ingredients</li>
+          <li id="contactLink">Contact Us</li>
+        </ul>
+        <div class="icons mt-auto w-75">
+          <a href="#" id="facebook-link"
+            ><i class="fa-brands fa-facebook text-white"></i
+          ></a>
+          <a href="#" id="twitter-link"
+            ><i class="fa-brands fa-twitter text-white"></i
+          ></a>
+          <a href="#" id="twitter-link"
+            ><i class="fa-solid fa-globe text-white"></i
+          ></a>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div id="newSidebar" class="new-sidebar">
+      <div class="top-logo">
+        <img src="./imgs/logo.png" alt="" class="img-fluid" />
+      </div>
+      <div id="toggleSidebarIcon" class="toggle-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="bottom-icons text-center d-flex flex-column">
+        <i class="fa-solid fa-globe"></i>
+        <i class="fa-solid fa-share-nodes mt-3"></i>
+      </div>
+    </div>
+    <div class="content">
+      <div id="home" class="active">
+        <div id="mealList" class="row"></div>
+      </div>
+      <div id="search" class="hidden">
+        <div>
+          <input type="text" id="searchByName" placeholder="Search by name" />
+          <input
+            type="text"
+            id="searchByLetter"
+            placeholder="Search by first letter"
+          />
+        </div>
+        <div id="searchResults" class="row"></div>
+      </div>
+      <div id="category" class="hidden">
+        <div id="categoryList" class="row"></div>
+      </div>
+      <div id="area" class="hidden">
+        <div id="areaList" class="row"></div>
+      </div>
+      <div id="ingredients" class="hidden">
+        <div id="ingredientsList" class="row"></div>
+      </div>
+      <form class="form-control" id="contactForm">
+        <input
+        type="text"
+        placeholder="Enter your name"
+        class="form-control mb-2"
+        />
+        <input
+        type="email"
+        placeholder="Enter your email"
+        class="form-control mb-2"
+        />
+        <input type="text"placeholder="Enter your phone" class="form-control mb-2"/>
+        <input type="number" placeholder="Enter your age" class="form-control mb-2"/>
+        <input type="password" placeholder="Enter your password" class="form-control mb-2"/>
+        <input type="password" placeholder="Re-enter your password" class="form-control mb-2"/>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
